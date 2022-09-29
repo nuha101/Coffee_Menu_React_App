@@ -1,25 +1,11 @@
-export default function Menu() {
+import React from "react";
+
+export default function Menu(props) {
   return (
-    <div className="menu">
-      <h1>Coffee Menu</h1>
+    <div>
       <ul>
         <li>
-          Cappuccino... <span>12SR</span>
-        </li>
-        <li>
-          Espresso... <span>18SR</span>
-        </li>
-        <li>
-          Americano... <span>16SR</span>
-        </li>
-        <li>
-          Latte... <span>13SR</span>
-        </li>
-        <li>
-          Mocaccino... <span>14SR</span>
-        </li>
-        <li>
-          Frappi... <span>20SR</span>
+          {props.name}... <span>{props.price}</span>
         </li>
       </ul>
     </div>
